@@ -5,6 +5,7 @@
 package com.poly.yellowcat.view;
 
 import com.poly.yellowcat.repository.TaiKhoanNhanVienRepository;
+import com.poly.yellowcat.utils.MsgBox;
 import com.poly.yellowcat.Application;
 import com.poly.yellowcat.model.TaiKhoanNhanVien;
 
@@ -15,6 +16,7 @@ import com.poly.yellowcat.model.TaiKhoanNhanVien;
 public class Login extends javax.swing.JFrame {
 
     private  TaiKhoanNhanVienRepository taiKhoanNhanVienRepository = Application.getBean(TaiKhoanNhanVienRepository.class);
+    
     
     public Login() {
         initComponents();
@@ -151,12 +153,23 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        
+        DangNhap();
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void DangNhap(){
         TaiKhoanNhanVien tknvr = taiKhoanNhanVienRepository.findByMa(txtAccount.getText());
-        
+        if(tknvr.getTen()==null){
+            MsgBox.alert(this, "Tài khoản nhân viên không hợp lệ!");
+        }else{
+            if(tknvr.getMatKhau().equalsIgnoreCase(txtPassWord.getText())){
+                MsgBox.alert(this, "Bạn đã đăng nhập thành công : ID :"+ tknvr.getId_TaiKhoanNhanVien() + "Tên đăng nhập : " + tknvr.getTen());
+                Menu m = new Menu();               
+                m.setVisible(true);
+                System.exit(0);
+            }else{
+                MsgBox.alert(this, "Bạn đã đăng thất bại vì mật khẩu sai : ID :  "+ tknvr.getId_TaiKhoanNhanVien() + "Tên đăng nhập :  " + tknvr.getTen()+txtPassWord.getText());
+            }
+        }       
     }
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
         ChangePass n = new ChangePass();

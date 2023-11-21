@@ -4,6 +4,7 @@
 package com.poly.yellowcat;
 
 import com.poly.yellowcat.view.Login;
+import com.poly.yellowcat.view.Menu;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
@@ -27,8 +28,10 @@ public class Application {
         context = createApplicationContext(args);
 
 
-        Login login = new Login();
-        login.setVisible(true);
+//        Login login = new Login();
+//        login.setVisible(true);
+        Menu m = new Menu();
+        m.setVisible(true);
         
     }
 

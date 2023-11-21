@@ -398,7 +398,7 @@ public class Menu extends javax.swing.JFrame {
         resetColor(lblTrangchu);
         resetColor(lblThongke);
         resetColor(lblGiamGia);
-//        showPanel(new QuanLiBanHangJPanel());
+        showPanel(new QuanLiBanHangJPanel());
     }//GEN-LAST:event_pnBanHangMouseClicked
 
     private void pnSanPhamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnSanPhamMouseClicked

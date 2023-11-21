@@ -148,8 +148,6 @@ public class HoaDon extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/thuRac2.png"))); // NOI18N
-
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -214,19 +212,15 @@ public class HoaDon extends javax.swing.JPanel {
         jTextField5.setBackground(new java.awt.Color(204, 255, 204));
 
         jButton2.setBackground(new java.awt.Color(204, 255, 204));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/thanhtoanpng.png"))); // NOI18N
         jButton2.setText("Tạo Hóa Đơn");
 
         jButton3.setBackground(new java.awt.Color(204, 255, 204));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Shiper.png"))); // NOI18N
         jButton3.setText("Giao Hàng");
 
         jButton4.setBackground(new java.awt.Color(204, 255, 204));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/hoaTra.png"))); // NOI18N
         jButton4.setText("Hoàn Trả");
 
         jButton5.setBackground(new java.awt.Color(204, 255, 204));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/boxhang.png"))); // NOI18N
         jButton5.setText("Đã giao");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -375,15 +369,12 @@ public class HoaDon extends javax.swing.JPanel {
         jLabel22.setText("5000 VND");
 
         jButton6.setBackground(new java.awt.Color(204, 255, 204));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tratien.png"))); // NOI18N
         jButton6.setText("Thanh Toán");
 
         jButton7.setBackground(new java.awt.Color(204, 255, 204));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/thanhtoanpng.png"))); // NOI18N
         jButton7.setText("Tạo Hóa Đơn");
 
         jButton8.setBackground(new java.awt.Color(204, 255, 204));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/thuRac1.png"))); // NOI18N
         jButton8.setText("Hủy");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -531,8 +522,6 @@ public class HoaDon extends javax.swing.JPanel {
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addContainerGap())
         );
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/tower.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
