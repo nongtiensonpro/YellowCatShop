@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author admin
+ * @author nongtiensonpro
  */
 public class MsgBox {
 

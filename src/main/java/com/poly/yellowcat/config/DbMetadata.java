@@ -6,7 +6,7 @@ package com.poly.yellowcat.config;
 
 /**
  *
- * @author HangNT169
+ * @author nongtiensonpro
  */
 public final class DbMetadata {
 

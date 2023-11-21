@@ -15,7 +15,7 @@ import lombok.Setter;
 
 /**
  *
- * @author nongt
+ * @author nongtiensonpro
  */
 @Entity
 @Table(name = "SanPham")
@@ -48,9 +48,6 @@ public class SanPham {
 
     @Column(name = "hinhAnh2")
     private String hinhAnh2;
-
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "hang_id", referencedColumnName = "id")
 
 
     @ManyToOne(fetch = FetchType.LAZY)

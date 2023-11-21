@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  *
- * @author HangNT169
+ * @author nongtiensonpro
  */
 @Configuration
 @EnableTransactionManagement
